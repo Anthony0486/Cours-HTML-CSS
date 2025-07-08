@@ -1,0 +1,8 @@
+h1{color: green;}
+body{background-color: rgb(215, 214, 214);}
+h1{border-style: double; color: darkgreen;}
+h1 { text-align: center }
+img {
+     border : 2px solid rgb(0, 100, 0);
+}
+h3{color: darkgreen;}
