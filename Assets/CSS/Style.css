@@ -1,8 +1,16 @@
-h1{color: green;}
-body{background-color: rgb(215, 214, 214);}
-h1{border-style: double; color: darkgreen;}
+h1{color: rgb(255, 0, 0);}
+body{background-color: rgb(240, 238, 238);}
+h1{border-style: double; color: rgb(255, 0, 0);}
 h1 { text-align: center }
 img {
-     border : 2px solid rgb(0, 100, 0);
-}
-h3{color: darkgreen;}
+     border : 5px solid rgb(252, 0, 0);border-radius: 100%; border-style: double;
+margin-left: 20px; margin-top: 20px;}
+h1{font-size: 50px;}
+h3{color: rgb(255, 0, 0);}
+h3{font-family: "comic sans ms";}
+h1{font-family: "pretendo";}
+body{border: 3px solid rgb(8, 8, 8);}
+body{border-radius: 2%;}
+body{font-family: comic sans ms;}
+h3,p,li{margin-left: 20px;}
+a{color: rgb(201, 13, 44);}
