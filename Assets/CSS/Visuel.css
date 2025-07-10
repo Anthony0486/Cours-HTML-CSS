@@ -1,0 +1,22 @@
+h1{
+    background-color: aqua;
+   width: 50%; ;
+    margin-left: 10%;
+}
+
+.container{
+    width: 50%;
+    background-color: slateblue;
+    color: darkseagreen;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    padding-left: 10%;
+}
+.second-container{
+    width: 50%;
+    background-color: indianred;
+    color: blue;
+    padding-top: 10%;
+    padding-left: 10%;
+    margin-top: 10%;
+}

@@ -1,0 +1,18 @@
+        .navbar {background: linear-gradient(0deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+
+        }
+        .navbar .logo {display: flex; justify-self: flex-start ; align-self: start;flex-direction: column;
+
+        }
+        .navbar ul {justify-content: flex-end; justify-content: space-around;align-items: flex-end;
+
+        }
+        .navbar ul li {
+
+        }
+        .navbar ul li a {
+
+        }
+        .navbar ul li a:hover {
+
+        }
