@@ -2,14 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
     <title>Inscription</title>
 </head>
 <body>
-    <h1 style="background-color:rgb(115, 255, 0);">Inscrivez-vous</h1>
-        <body style="font-family: comic sans ms;" 
+    <h1>Inscrivez-vous</h1>
+    
       <form action="traitement.php" method="post">
 
-        <input type="checkbox" id="Homme" name="Homme" value="Homme">
+       <div class="bloc gris"><input type="checkbox" id="Homme" name="Homme" value="Homme">
         <label for="Homme">Homme</label><br>
         <input type="checkbox" id="Femme" name="Femme" value="Femme">
         <label for="Femme">Femme</label><br>
@@ -24,7 +25,7 @@
                <input type="password" placeholder="Choisir un mot de passe"><br>
                <input type="password" placeholder="Repetez votre mot de passe"><br>
         <button type="submit">Inscription</button><br>
-    <br><a href="Login.html">Vous êtes déja inscrit? Connectez-vous</a>
+    <br><a href="Login.html">Retour connexion</a></div>
     </body>
 </body>
 </html>
