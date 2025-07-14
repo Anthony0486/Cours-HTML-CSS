@@ -1,0 +1,29 @@
+.logo{
+font-family: Comic sans ms;
+font-size: 150%;
+font-style: bold;
+color:aliceblue;
+width: 150px;
+height: 30px;
+background-color: aqua;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: startÒ;
+}
+.navbar{background: linear-gradient(90deg,rgba(176, 18, 18, 1) 0%, rgba(245, 146, 17, 1) 50%, rgba(237, 150, 83, 1) 100%);
+display: flex;  
+flex-direction: row; 
+
+}
+.navbar li{
+    height: 30px;
+    width: 100px;
+    background-color: aqua;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.navbar ul li {}
