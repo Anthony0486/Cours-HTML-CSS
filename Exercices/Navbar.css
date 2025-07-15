@@ -18,22 +18,14 @@
                 font-size: 30px;
                 font-style: bold;
                 
-s
+
         }
         .navbar ul {display: flex;
                 position: relative;
                 left: 900px; 
                 align-content: center;
-                
-                
-             
-                
-                
-                
-               
-
-
         }
+        
         .navbar ul li {list-style: none;
                 height: 20px;
                 width: 80px;

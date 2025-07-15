@@ -3,27 +3,59 @@ font-family: Comic sans ms;
 font-size: 150%;
 font-style: bold;
 color:aliceblue;
-width: 150px;
-height: 30px;
-background-color: aqua;
 display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: startÒ;
+
 }
 .navbar{background: linear-gradient(90deg,rgba(176, 18, 18, 1) 0%, rgba(245, 146, 17, 1) 50%, rgba(237, 150, 83, 1) 100%);
-display: flex;  
-flex-direction: row; 
+display: flex; 
+justify-content: space-between ; 
+position: sticky;
+
+
 
 }
-.navbar li{
-    height: 30px;
-    width: 100px;
-    background-color: aqua;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar ul{
+
+list-style: none;
+ display: flex;
+ 
 
 }
-.navbar ul li {}
+
+.navbar ul li a {
+    text-decoration: none;
+
+
+
+}
+
+.navbar ul a:hover {color: aqua;}
+
+.table {border-style: solid;}
+
+.p {font-family: comic sans ms;}
+
+        .containerGrid{
+    padding: 1%;
+    background-color: rgb(111, 134, 157);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+}
+#el1{
+    background-color: rgb(0, 157, 255);
+    grid-row: 2;
+    grid-column: 1;
+}
+#el2{
+    background-color: rgb(114, 232, 114);
+    grid-row: 2;
+    grid-column: 2;
+}
+#el3{
+    background-color: rgb(246, 0, 0);
+    grid-row: 2;
+    grid-column: 3;
+
+}
