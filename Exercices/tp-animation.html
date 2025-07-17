@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Animations</title>
+    <style>
+
+        @media screen and (max-width: 640px) {
+  .nav {
+    display:block;
+    clear:both;
+  }
+        }
+
+        @keyframes coloration {
+  0%   {background-color:rgba(255, 0, 0, 0.13); left:0px; top:0px;}
+  25%  {background-color:rgba(253, 38, 0, 0.377); left:200px; top:0px;}
+  50%  {background-color:rgba(255, 0, 0, 0.555); left:200px; top:200px;}
+  75%  {background-color:rgba(253, 2, 2, 0.747); left:0px; top:200px;}
+  100% {background-color:rgb(255, 0, 0); left:0px; top:0px;}
+}
+
+@keyframes zoom {    
+
+   0%   {-webkit-transform: scale(1);}
+   50%   {-webkit-transform: scale(1.2);}
+   100% {transform: scale(1.3);}
+}
+
+        nav ul{
+        display: grid;
+        grid-column-start: 4;  
+        grid-row-start: 2;  
+
+
+        }
+
+        nav {
+        display: grid;
+        grid-template-columns: 400px 1fr 400px;
+        grid-template-rows: 100px 100px 1fr;
+        justify-items: center;
+        background-color: rgb(247, 247, 247);
+}
+
+        .animation {
+        background-color: rgb(203, 20, 20);
+        font-family: pretendo;
+        text-decoration: underline overline azure;
+        font-size: 180%;
+        color: azure;
+        height: 80px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column-start: 2;
+        animation-iteration-count: infinite;
+        animation-name: coloration;
+        animation-duration: 1s;
+        
+}
+       
+ 
+
+    
+
+        .animation :hover {
+   
+            
+       
+    }
+
+
+        .animationlogo {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    display: flex;
+    justify-self: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    }   
+        
+        .animationlogo :hover  {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+  
+    }
+    body {background-color: beige;
+
+
+     
+    
+    }
+
+    </style>
+</head>
+<body>
+    <nav><div class="animation">Collec'tendo</div>
+    
+    <div class="animationlogo">
+    <div><img src="../Assets/Images/Collect-tendo-27-06-2025.jpg" alt="logoanime" height="80" width="300">
+        <ul>
+            <li><a href="#" type="Accueil"></a>Accueil</li>
+            <li><a href="#" type="Contact"></a>Contact</li>
+            <Li><a href="#" type="A propos"></a>A propos</Li>
+        </ul>
+    </div>
+    </nav>
+</body>
+</html>
