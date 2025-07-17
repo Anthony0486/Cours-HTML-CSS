@@ -115,15 +115,18 @@ footer {
     header {background-color: aqua;}}
 
 @media screen and (max-width: 576px) {
-    header {background-color: gold;}}
+    header {background-color: gold;}
+    main {display: flex; flex-direction: column;}
+    section {width: auto;}
+}
 
 @media screen and (min-width: 390px) and (max-width: 480px) {
     header {background-color: red;}
     main {display: flex; flex-direction: column;}
-    section {width: 95%;}
+    section {width: auto;}
     /* Pour un affichage correct sur de petits écrans */
 }
-@media screen and (width: 667px) and (orientation: landscape) {
+@media screen and (max-width: 667px) and (orientation: landscape) {
     header {background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);}
 }
 
