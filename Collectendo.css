@@ -12,14 +12,14 @@
 
 body {
     font-family: Oswald, verdana;
-    background: url(Assets/Images/Sky.jpeg) center/cover;
+    background: url(Assets/Images/background\ mario.jpg) center/cover;
     min-height: 100vh;
 /* VH = 100% de la taille de l'écran (viewport height) */
 }
 
 header nav {
 
-    min-height: 200px;
+    min-height: 100px;
     width: 90%;
     background: rgb(231 27 36);
     /* centrer une boite */
@@ -29,49 +29,76 @@ header nav {
     box-shadow: -20px 19px 20px 4px #52b7ca;
     padding: 15px;
     display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   align-items: center;
-  justify-content: space-between;
+   grid-template-columns: 30% 30% 40%;
+ 
 
 }
 
 header nav ul{
     list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    justify-content: center;
+   justify-content: space-around;
+
+    
+   
 
 }
 
 header nav ul li {
-    font-size: 1.5rem;
+   width: 100px;
+   
+   
 }
 
+header nav ul li a {
+    font-family: 'Segoe UI', Verdana;
+    font-style: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+    background: rgb(248, 247, 247);
+    border-radius: 10%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(243, 243, 243);
+    justify-items: center;
+}
+
+header nav ul li a:hover {
+    background-color: rgb(255, 52, 52);
+    color: white;
+
+     
+}
+
+
 header nav img{
-     width: 80%;
+     width: 70%;
     margin: 20px auto;
    
 
 }
 
-h1 {text-transform: uppercase;
+h1 {
+    grid-column-start: 1;
+    min-width: 100px;
+    text-transform: uppercase;
+    text-decoration: overline, underline;
     text-align: center;
     letter-spacing: 3px;
-    font-size: 3rem; 
+    font-size: 2vh;
     /* les tailles de polices doivent être en REM 1rem = 16px */
     text-shadow: 0px 5px 0 #0000002e;
-    color: rgb(208, 190, 190);
+    color: rgb(247, 243, 243);
     font-family: 'Segoe UI', verdana;
 }
 
 main {
     min-height: 500px;
     width: 90%;
-    background: rgba(247, 243, 243, 0.782);
+    background: rgb(231 27 36);
     /* centrer une boite */
     margin: 0 auto;
-    border: 2px solid skyblue;
+    border: 2px solid rgb(244, 246, 247);
     border-radius: 20px;
     box-shadow: -20px 19px 20px 4px #52b7ca;
     padding: 15px;
@@ -82,7 +109,7 @@ h2 {
 }
 
 .flexbox, .grid {
-    border: 2px solid skyblue;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
@@ -97,14 +124,16 @@ h2 {
 
 .flexbox li {
     list-style: none;
-    height: 160px;
-    width: 160px;
+    height: 100px;
+    width: 100px;
     margin: 10px;
-    background: turquoise;
+    border-radius: 100%;
+    background: rgb(252, 252, 252);
     /* centrer un unique élément verticalement et horizontalement */
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .grid-container {
@@ -128,7 +157,7 @@ form {
 
 input, textarea {
     margin: 5px;
-    border: 2px solid skyblue;
+    border: 2px solid rgb(255, 255, 255);
     padding: 10px;
     font-size: 1.1rem;
     font-family: Oswald, verdana;
@@ -144,11 +173,62 @@ textarea {
 #btn-submit {
     grid-area: bt;
     cursor: pointer;
-    background: rgb(0, 157, 255);
+    background: rgb(250, 251, 252);
     transition: 0.2s;
 }
 
 #btn-submit:hover {
-    background: rgb(0, 72, 139);
+    background: rgb(255, 52, 52);
     color: white;
+}
+
+h2{
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+footer {
+    min-height: 100px;
+    width: 90%;
+    background: rgb(231 27 36);
+    /* centrer une boite */
+    margin: 0 auto;
+    border: 2px solid rgb(244, 246, 247);
+    border-radius: 20px;
+    box-shadow: -20px 19px 20px 4px #52b7ca;
+    padding: 15px;
+   
+}
+
+
+@media screen and (max-width: 748px){
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "i1"
+        "i2"
+        "ta"
+        "bt";
+    }
+
+    header nav ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-start: 3;
+        grid-template-areas: 
+        "i1"
+        "i2"
+        "ta"
+        "bt";
+    }
+
+    header nav ul li {
+        padding: 5px;
+    }
 }
