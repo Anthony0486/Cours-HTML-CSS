@@ -24,9 +24,9 @@ header nav {
     background: rgb(231 27 36);
     /* centrer une boite */
     margin: 0 auto;
-    border: 2px solid skyblue;
+    border: 2px solid rgb(244, 246, 247);
     border-radius: 20px;
-    box-shadow: -20px 19px 20px 4px #52b7ca;
+        box-shadow: -6px 12px 20px 10px #0000005c;
     padding: 15px;
     display: grid;
    grid-template-columns: 30% 30% 40%;
@@ -100,7 +100,7 @@ main {
     margin: 0 auto;
     border: 2px solid rgb(244, 246, 247);
     border-radius: 20px;
-    box-shadow: -20px 19px 20px 4px #52b7ca;
+        box-shadow: -6px 12px 20px 10px #0000005c;
     padding: 15px;
 }
 
@@ -200,7 +200,7 @@ footer {
     margin: 0 auto;
     border: 2px solid rgb(244, 246, 247);
     border-radius: 20px;
-    box-shadow: -20px 19px 20px 4px #52b7ca;
+        box-shadow: -6px 12px 20px 10px #0000005c;
     padding: 15px;
    
 }
