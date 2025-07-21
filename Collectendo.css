@@ -30,14 +30,17 @@ header nav {
     padding: 15px;
     display: grid;
     grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 1fr;
+    grid-template-rows: 2fr;
  
 
 }
 
 header nav ul{
     list-style: none;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: 2;
+    
+    
 
     
    
@@ -46,6 +49,8 @@ header nav ul{
 
 header nav ul li {
    width: 100px;
+   grid-row-start: 2;
+   
    
    
 }
@@ -68,14 +73,17 @@ header nav ul li a {
 header nav ul li a:hover {
     background-color: rgb(255, 52, 52);
     color: rgb(14, 0, 0);
-
-     
+    
 }
 
+header nav ul li a i {
+    grid-template-rows: 1fr;
+}
 
 header nav img{
      width: 70%;
      margin: 20px auto;
+    
    
 
 }
@@ -193,6 +201,8 @@ h2{
 footer p {
     color: white;
     font-size: 0.8rem;
+    align-items: center;
+    
 }
 
 footer {
@@ -203,8 +213,9 @@ footer {
     margin: 0 auto;
     border: 2px solid rgb(244, 246, 247);
     border-radius: 20px;
-        box-shadow: -6px 12px 20px 10px #0000005c;
+    box-shadow: -6px 12px 20px 10px #0000005c;
     padding: 15px;
+    display: grid;
    
 }
 
@@ -233,5 +244,15 @@ footer {
 
     header nav ul li {
         padding: 5px;
+    }
+
+    .flexbox li {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "img""img"
+        "img""img"
+        "img""img"
+        ;
     }
 }
