@@ -17,24 +17,48 @@ body {
 /* VH = 100% de la taille de l'écran (viewport height) */
 }
 
-nav {
-    background: #e71b24;
+header nav {
+
+    min-height: 200px;
+    width: 90%;
+    background: rgb(231 27 36);
+    /* centrer une boite */
+    margin: 0 auto;
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    box-shadow: -20px 19px 20px 4px #52b7ca;
+    padding: 15px;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+  justify-content: space-between;
+
 }
 
-nav img {
+header nav ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
 
-            width: 70%;
+}
+
+header nav ul li {
+    font-size: 1.5rem;
+}
+
+header nav img{
+     width: 80%;
     margin: 20px auto;
+   
 
 }
 
 h1 {text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
-    font-size: 2.5rem; 
+    font-size: 3rem; 
     /* les tailles de polices doivent être en REM 1rem = 16px */
     text-shadow: 0px 5px 0 #0000002e;
     color: rgb(208, 190, 190);
