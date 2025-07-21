@@ -26,17 +26,18 @@ header nav {
     margin: 0 auto;
     border: 2px solid rgb(244, 246, 247);
     border-radius: 20px;
-        box-shadow: -6px 12px 20px 10px #0000005c;
+    box-shadow: -6px 12px 20px 10px #0000005c;
     padding: 15px;
     display: grid;
-   grid-template-columns: 30% 30% 40%;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 1fr;
  
 
 }
 
 header nav ul{
     list-style: none;
-   justify-content: space-around;
+    justify-content: space-around;
 
     
    
@@ -54,18 +55,19 @@ header nav ul li a {
     font-style: bold;
     font-size: 1.5rem;
     text-decoration: none;
-    color: rgb(10, 10, 10);
-    background: rgb(248, 247, 247);
+    color: rgb(252, 252, 252);
+    /* background: rgb(248, 247, 247); */
     border-radius: 10%;
-    border-style: solid;
+    /* border-style: solid; */
     border-width: 0.5px;
     border-color: rgb(243, 243, 243);
-    justify-items: center;
+    
+    
 }
 
 header nav ul li a:hover {
     background-color: rgb(255, 52, 52);
-    color: white;
+    color: rgb(14, 0, 0);
 
      
 }
@@ -73,13 +75,14 @@ header nav ul li a:hover {
 
 header nav img{
      width: 70%;
-    margin: 20px auto;
+     margin: 20px auto;
    
 
 }
 
 h1 {
     grid-column-start: 1;
+    
     min-width: 100px;
     text-transform: uppercase;
     text-decoration: overline, underline;
