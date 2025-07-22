@@ -4,12 +4,11 @@
     src: url(Assets/Fonts/Oswald-VariableFont_wght.ttf);
 }
 
-/* L'étoile donne du style à tous les éléments*/
-* {
+/* L'étoile donne du style à tous les éléments
+*{
     margin: 0;
     padding: 0;
-    /* border: solid red; pour afficher des cadres de toutes les boites*/ 
-} 
+} */
 
 body {
     font-family: Oswald, verdana;
@@ -18,10 +17,25 @@ body {
 /* VH = 100% de la taille de l'écran (viewport height) */
 }
 
+nav {
+    background: #e71b24;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav img {
+
+            width: 70%;
+    margin: 20px auto;
+
+}
+
 h1 {text-transform: uppercase;
     text-align: center;
     letter-spacing: 3px;
-    font-size: 8vw; /*VW = viewport width (permets au titres d'être responsives et de grossir et retressir en même temps que la taille de l'ecran mais généralement les tailles de polices doivent être en REM 1rem = 16px */
+    font-size: 2.5rem; 
+    /* les tailles de polices doivent être en REM 1rem = 16px */
     text-shadow: 0px 5px 0 #0000002e;
     color: rgb(208, 190, 190);
     font-family: 'Segoe UI', verdana;
@@ -43,12 +57,11 @@ h2 {
     margin: 0;
 }
 
-.flexbox, .grid, .absolute {
+.flexbox, .grid {
     border: 2px solid skyblue;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
-    min-height: 150px;
    
 }
 
@@ -56,10 +69,6 @@ h2 {
     padding: 0;
     display: flex;
     justify-content: space-around;
-}
-
-.flexbox ul :hover li:not(:hover) {
-    color: grey;
 }
 
 .flexbox li {
@@ -72,13 +81,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.2s;
-    text-decoration: none;
-    
-}
-
-.flexbox li :hover {
-    text-shadow: -6px 4px 5px #ffffff; 
 }
 
 .grid-container {
@@ -89,7 +91,6 @@ h2 {
 .grid img {
     width: 80%;
     margin: 20px auto;
-    display:block;
 }
 form {
     display:grid;
@@ -126,60 +127,4 @@ textarea {
 #btn-submit:hover {
     background: rgb(0, 72, 139);
     color: white;
-}
-
-/* Absolute : Il faut mettre une postion relative au parent pour contraindre l'élément enfant avec une position absolute dans les frontières du parent (sinon il sera absolute par rapport au body. */
-
-.absolute {
-    position: relative;
-}
-
-#circle1 {
-    height: 80px;
-    width: 80px;
-    background: skyblue;
-    position: absolute;
-    border-radius: 150px;
-    top: 0;
-    right: 0;
-}
-
-#circle2 {
-    height: 40px;
-    width: 40px;
-    background: rgb(135, 235, 170);
-    position: absolute;
-    border-radius: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 100px;
-}
-
-@media screen and (max-width:900px) {
-   .grid-container {
-    display: block;
-   }
-}
-
-@media screen and (max-width: 640px) {
-    .flexbox ul {
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    form {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "i1"
-        "i2"
-        "ta"
-        "bt";
-    }
-    input, textarea {
-        font-size: 0.8rem;
-    }
-
-
-
 }
