@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{    
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid white;
+}
+
+.logo{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 5px 0 #0000002e;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    color: white;
+}
+
+a:hover{
+    cursor: pointer;
+    color: rgb(124, 157, 223);   
+}
+
+.hero{
+    background: #EEAECA;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 40px;
+
+}
+
+.hero p{
+    width: 400px;
+    color: white;
+}
+
+.hero h1{
+    width: 200px;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0px 5px 0 #0000002e;
+    }
+
+.hero button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    background:linear-gradient(90deg, #fcff9e 0%, #c67700 100%)
+}
+
+.hero button:hover {
+    cursor: pointer;
+    color: white;
+    background:linear-gradient(10deg, #fcff9e 0%, #c67700 100%)
+
+}
+
+h2{
+    width: 300px;
+    margin: auto;
+    color: rgb(128, 163, 247);
+    margin-bottom:  2em;
+}
+.themes {
+  padding: 4rem 2rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+.themes-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3,1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+}
+
+.theme-card {
+  background: white;
+  cursor: pointer;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+.theme-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.theme-card img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.theme-card h3 {
+  color: #4a90e2;
+  margin-bottom: 0.5em;
+}
+.about {
+  display: flex;
+  max-width: 1100px;
+  gap: 3rem;
+  margin: 4rem auto;
+}
+
+.about-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.about-image {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+footer{
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
