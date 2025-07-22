@@ -148,10 +148,12 @@ footer {
     /* Hero Section */
     .hero-section {
        /* Empiler contenu et image sur mobile */
-  
+        justify-content: center;
+
     }
     .hero-image img {
         /* Ajustement taille image sur mobile */
+        
     }
 
     /* Feature Cards Grid - ajustement pour tablette/mobile */
