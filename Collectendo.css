@@ -19,7 +19,7 @@ body {
 
 header nav {
 
-    min-height: 100px;
+    
     width: 90%;
     background: rgb(231 27 36);
     /* centrer une boite */
@@ -29,8 +29,8 @@ header nav {
     box-shadow: -6px 12px 20px 10px #0000005c;
     padding: 15px;
     display: grid;
-    grid-template-columns: 30% 30% 40%;
-    grid-template-rows: 2fr;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
  
 
 }
@@ -38,18 +38,17 @@ header nav {
 header nav ul{
     list-style: none;
     display: grid;
-    grid-template-rows: 2;
+    grid-
+    grid-row-start: 1;
+    grid-column-start: 3;
     
-    
-
-    
-   
+      
 
 }
 
 header nav ul li {
    width: 100px;
-   grid-row-start: 2;
+  
    
    
    
@@ -58,7 +57,7 @@ header nav ul li {
 header nav ul li a {
     font-family: 'Segoe UI', Verdana;
     font-style: bold;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     color: rgb(252, 252, 252);
     /* background: rgb(248, 247, 247); */
@@ -77,7 +76,11 @@ header nav ul li a:hover {
 }
 
 header nav ul li a i {
-    grid-template-rows: 1fr;
+    
+  
+    width: 20%;
+    height: 20%;
+    color: white;
 }
 
 header nav img{
@@ -236,17 +239,17 @@ footer {
         grid-template-columns: 1fr;
         grid-column-start: 3;
         grid-template-areas: 
-        "i1"
-        "i2"
-        "ta"
-        "bt";
+        "li"
+        "li"
+        "li"
+        ;
     }
 
     header nav ul li {
         padding: 5px;
     }
 
-    .flexbox li {
+    .flexbox ul {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas: 
