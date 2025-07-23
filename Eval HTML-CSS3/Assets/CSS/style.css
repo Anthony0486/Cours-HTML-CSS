@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    } 
+
+:root {
+    --primary-color: #e0e0e0  ;
+    --secondary-color: #facc15  ;
+    --text-color: #333333;
+    --bg-color: #f0f0f0 ;
+    --hover-color:#3b82f6;
+}
+@font-face {
+    font-family : Monserrat; src: url(../Fonts/Montserrat-VariableFont_wght.ttf);
+    font-family: Open sans; src: url(../Fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: Nunito sans; src: url(../Fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+ 
+body {
+    min-height: 100vh;
+    font-family: Open sans, sans-serif; 
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+/* HEADER-------------------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0;
+   
+    
+}
+
+.logo {
+    font-size: 2rem;
+    position: absolute;
+    left: 75px;
+    text-shadow: -1px 1px 11px var(--hover-color);
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px 10px;
+}
+
+nav a:hover {
+    color: var(--hover-color);
+}
+
+h1{
+    font-family: Monserrat, sans-serif;
+    text-shadow: -1px 0px 3px var(--secondary-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* FIN HEADER------------------------- */
+/* HERO SECTION------------------------- */
+
+.hero {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background: linear-gradient(to right, var(--hover-color), var(--primary-color));
+    color: #e0e0e0;
+    gap: 40px;
+}
+
+.hero p{
+    font-size: 1.2rem;
+}
+
+/* FIN HERO SECTION------------------------- */
+/* SECTION PRINCIPALE------------------------- */
+
+h2{
+    font-family: Monserrat, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 150px;
+    margin: auto;
+}
+
+h3{
+    font-family: Nunito sans;
+    width: 300px;
+    margin: auto;
+    text-align: center;    
+}
+
+
+.sections {
+    
+    min-height: 200px;
+    margin: auto;
+    padding: 60px 20px;
+    
+}
+
+
+.sections-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 30px;
+    width: 90%;
+    padding: auto;
+   
+}
+
+.section {
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    
+}
+
+
+form {
+    width: 500px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "cb cb"
+    "bt2 bt1";
+}
+
+input, textarea {
+    margin: 5px;
+    border: 2px solid var(--secondary-color);
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+textarea {
+    grid-area: ta;
+    height: 40px;
+    resize: none;
+}
+
+#btn-submit {
+    grid-area: bt1;
+    cursor: pointer;
+    background: var(--primary-color);
+    transition: 0.2s;
+}
+
+#btn-submit:hover {
+    background: var(--secondary-color);
+    color: #f0f0f0;
+}
+
+#btn-reset {
+    grid-area: bt2;
+    cursor: pointer;
+    background: var(--primary-color);
+    transition: 0.2s;
+}
+
+#btn-reset:hover {
+     background: var(--secondary-color);
+    color: white;
+}
+
+input #checkbox {
+    grid-area: cb;
+}
+
+/* FIN SECTION PRINCIPALE------------------------- */
+/* FOOTER------------------------- */
+
+footer {
+    background: linear-gradient(to right, var(--hover-color), var(--primary-color));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* FIN FOOTER------------------------- */
+/* RESPONSIVE------------------------- */
+
+@media (max-width: 768px) {
+    
+    header {
+        
+        flex-direction: column; 
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        display: none;
+
+    }    
+    
+    .hero {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .sections {
+        text-overflow: clip;
+        overflow: visible;
+
+    }
+    form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr;
+        grid-template-areas:
+        "i1"
+        "i2"
+        "ta"
+        "cb"
+        "bt2"
+        "bt1";
+    }
+    input, textarea {
+        font-size: 0.8rem;
+    }
+}

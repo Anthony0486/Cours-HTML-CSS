@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital student One pager</title>
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <img src="Assets/Images/Digitalstudentlogo.png" alt="Logo digital student" width="50px" height="50px">
+        <div class="logo">Digital Student</div>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        <a href="#lienform">Contact</a>
+    </nav>
+    </header>
+    <!-- Hero section -->
+     <section class="hero">
+         <div class="hero-content">
+        <h1>Apprends à réaliser un site web:</h1>
+        <p>Avec Digital Student deviens un expert de HTML5 et CSS3!</p></div>
+            <div class="hero-image">
+                <img src="Assets/Images/css-html.webp" alt="logohtmlcss" width="200px" height="130px"> 
+            </div>
+     </section>
+     <!--Section principale -->
+    <section class="sections">
+        <h2>Sommaire</h2>
+        <div class="sections-grid">
+            <div class="section">
+                <h3>Introduction</h3><br>
+                <p>Sur cette page, vous allez découvrir acteur fondamental du développement web, le couple HTML+CSS (Hyper Text Markup Langage et Cascading Style Sheets)
+                Grâce au HTML vous allez pouvoir, dans votre navigateur (Firefox, Chrome, Opera,....), afficher du texte, afficher des images, proposer des hyperliens 
+                (liens vers d'autres pages web), afficher des formulaires et même maintenant afficher des vidéos (grâce à la dernière version du HTML, l'HTML5).
+            Il est souvent utilisé conjointement avec des langages de programmation (JavaScript) et des formats de présentation (CSS).</p>
+            </div>
+            <div class="section">
+                <h3>Pourquoi apprendre HTML/CSS ?</h3><br>
+                <ul>
+                    <li>Le CSS permet à l’utilisateur de personnaliser une page web, de nombreux sites web permettent à l’utilisateur de changer la mise en page 
+                        d’un site sans modifier le contenu.</li>
+                    <li>Les pages web se chargent plus rapidement et utilisent moins de bande passante car la feuille de style (téléchargée une seule fois puis stockée 
+                        dans la mémoire cache) simplifies le code HTML ce qui permet de consommer moins de bande passante lors du chargement de la page.</li>
+                    <li>Le CSS est compatible avec tous les navigateurs, les sites web qui emploient correctement le CSS ont une apparence similaire quelque soit 
+                        le navigateur utilisé.</li>
+                    <li>Le CSS facilite le positionnement dans les moteurs de recherche, le contenu est fourni en premier pour qu’il soit plus facilement « capturable » 
+                        par les obots d’indexation.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h3>Les balises html de base</h3>
+                <pre><code>
+                    <ul>
+                        <li>&lt;h1&gt;Permet d'afficher un titre parmis 6 tailles de texte différents du h1 au h6 (h1 étant la plus grosse taille)&lt;/h1&gt;</li>
+                        <li>&lt;P&gt;Permet d'afficher du texte, on l'utilise pour les paragraphes généralement&lt;/P&gt;</li></li>
+                        <li>&lt;a&gt;Permet de creer un lien, cela peut être un lien vers un élément,sur la page ou vers une autre page&lt;/a&gt;</li>
+                        <li>&lt;img&gt;Permet d'afficher une image, de lui attribuer un nom et une taille, un lien permet de choisir une image stockée en local ou bien d'indiquer l'url d'une image stockée en ligne&lt;/img&gt;</li>
+                        <li>&lt;ul&gt;Permet d'afficher une liste sans ordre de tri (il est possible d'afficher une liste ordonnée avec la balise &lt;ol&gt;)&lt;/ul&gt;</li>
+                        <li>&lt;li&gt;Permet d'afficher un élément d'une liste avec bullet point (par déffaut)&lt;/li&gt;</li>
+                    </ul>
+                </code></pre>
+
+            </div>
+            <div class="section">
+                <h3>Tips & bonnes pratiques</h3>
+                <p><em>Voici quelques astuces qui pourront vous aider sur vos projets en html et css:</em></p>
+            <ul>
+                <br><li>Pensez en premier lieux à lier votre feuille css à votre page html à l'aide de la balise link (à placer dans la balise &lt;head&gt; de votre index.html) </li>
+                <li>Le site https://www.w3schools.com/ qui est une bible pour retrouver toutes les fonctions de html et de css et permets de tester le code en ligne directement.</li>
+                <li>L'editeur de code "Visual studio code" et son pulgin "live server" vous permettent d'afficher la page hmtl pour visualiser l'avancée du projet.</li>
+                <li>Le racourci ctrl+/ qui permet d'ajouter des commentaires (qui n'apparaissent que dans le code) vous permetant d'avoir un code plus lisible</li>
+                <li>Essayez d'organiser votre css dans le même ordre que votre html (de l'élément le plus en haut de la page jusqu'au plus bas)</li>
+            </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Formulaire -->
+            <h3 id="lienform">Vous avez une question ?</h3>
+            <form action="">
+                <input type="text" id="Firstname"placeholder="Votre prénom">
+                <input type="email" id="email"placeholder="Votre Email">
+                <textarea
+                cols="30"
+                rows="10"
+                placeholder="Taper votre message">
+                </textarea>
+                <input type="submit" value="valider" id="btn-submit">
+                <input type="reset" value="Effacer" id="btn-reset" >
+                <div><input type="checkbox" id="checkbox" name="newsletter" checked />
+                <label for="newsletter">Inscription à la newsletter</label>
+            </div>
+            </form>
+   <!-- Pied de page -->
+    <footer>
+        &copy; 2025 Digital Student - Tous droits réservés
+          <nav>
+        <a href="#">Mentions legales</a>
+        <a href="#">Plan du site</a>
+        <a href="#">FAQ</a>
+        <a href="#">Accessibilité</a>
+         </nav>
+    </footer>
+</body>
+</html>
