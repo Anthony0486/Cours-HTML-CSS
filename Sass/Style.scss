@@ -1,0 +1,31 @@
+$fond: gold;
+$font-style: "comic sans ms";
+$text-color: rgb(76, 75, 75);
+$border-style: solid;
+$fond-titre: white;
+
+@mixin bordure($couleur, $largeur: 1px) {border: $largeur solid $couleur; border-radius: 5px;}
+
+
+div {
+    h1 {
+        color: $text-color;
+        font-family: $font-style;
+        @include bordure (blue);
+        display: flex;
+        justify-self: center;
+        
+        padding: 10px;
+        text-shadow: 3px 3px gold;
+    }
+
+    input {
+        display: flex;
+        justify-self: center;
+        @include bordure(red,2px )
+    }
+}
+
+body {
+    background-color: $fond;
+}
