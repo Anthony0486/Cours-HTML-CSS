@@ -80,11 +80,10 @@ for (let i=0;i<10;i++){
 // 11
 // 12
 console.log("Exercice 5");
-let nombre3=3
-nombre3
 for (let i=3;i<13;i++){
-    console.log(nombre3++)
+    console.log(i);
 }
+
 
 // Exerice 6 : écrire dans la console :
 // 0
@@ -98,10 +97,16 @@ for (let i=3;i<13;i++){
 // 0
 // 1
 console.log("Exercice 6");
-for (let i=0;i<2;i++){
-for (let j=0;j<4;j++){
-    console.log(j)
-}
+
+for(let i=0;i<1;i++){
+    for (let j=0;j<2;j++){
+        for (let k=0;k<4;k++){
+        console.log(k);
+        }
+        
+    }
+    console.log(i);
+    console.log(i+=1)
 }
 // Exercice 7 : écrire dans la console :
 // 0
@@ -115,7 +120,17 @@ for (let j=0;j<4;j++){
 // 8
 // 9
 console.log("Exercice 7");
-// TODO
+for (let i=0;i<=4;i++){
+        console.log(i);
+}
+for (let j=0;j<3;j++){
+    console.log("A");
+}
+for (let k=8;k<10;k++){
+    console.log(k);
+}
+
+
 
 // Exercice 8 : écrire dans la console :
 // 100
@@ -129,7 +144,16 @@ console.log("Exercice 7");
 // 8
 // 109
 console.log("Exercice 8");
-// TODO
+let valeur=100;
+console.log(valeur);
+let i=1;
+console.log(i);
+while (i<3;i++){
+    console.log(i+=1);
+    console.log(i+=2);
+    console.log(valeur=valeur+3);
+}
+
 
 // Exercice 9 : écrire dans la console :
 // 0
