@@ -17,9 +17,13 @@ for(let i = 0 ; i < 50 ; i++) {
 // B
 console.log("Exercice 2");
 
-for (let i=0;i<5;i++){
-    console.log("A");
-    console.log("B");
+for (let i=0;i<10;i++){
+    if(i%2==0){
+        console.log("A");
+    }
+    else {
+        console.log("B");
+    }
 }
 
 // Exercice 3 : écrire dans la console :
@@ -60,10 +64,9 @@ console.log("B");
 // 8
 // 9
 console.log("Exercice 4");
-let nombre=0
-nombre
+
 for (let i=0;i<10;i++){
-    console.log(nombre++)
+    console.log(i);
 }
 
 
@@ -98,15 +101,8 @@ for (let i=3;i<13;i++){
 // 1
 console.log("Exercice 6");
 
-for(let i=0;i<1;i++){
-    for (let j=0;j<2;j++){
-        for (let k=0;k<4;k++){
-        console.log(k);
-        }
-        
-    }
-    console.log(i);
-    console.log(i+=1)
+for(let i=0;i<10;i++){
+    console.log(i%4);
 }
 // Exercice 7 : écrire dans la console :
 // 0
@@ -120,16 +116,16 @@ for(let i=0;i<1;i++){
 // 8
 // 9
 console.log("Exercice 7");
-for (let i=0;i<=4;i++){
-        console.log(i);
-}
-for (let j=0;j<3;j++){
-    console.log("A");
-}
-for (let k=8;k<10;k++){
-    console.log(k);
-}
 
+
+for (let i=0;i<10;i++){
+    if(i>4 && i<8){  //fonctionne aussi avec l'opérateur OU || if (i<=4 || i>=8)
+    console.log("A");
+    }
+    else{
+    console.log(i);
+    }
+}
 
 
 // Exercice 8 : écrire dans la console :
@@ -144,16 +140,14 @@ for (let k=8;k<10;k++){
 // 8
 // 109
 console.log("Exercice 8");
-let valeur=100;
-console.log(valeur);
-let i=1;
-console.log(i);
-while (i<3;i++){
-    console.log(i+=1);
-    console.log(i+=2);
-    console.log(valeur=valeur+3);
+for (let i=0;i<10;i++){
+    if (i%3==0){
+    console.log(i+100);
+    }
+    else{
+    console.log(i);
+    }
 }
-
 
 // Exercice 9 : écrire dans la console :
 // 0
@@ -167,7 +161,22 @@ while (i<3;i++){
 // 208
 // 9
 console.log("Exercice 9");
-// TODO
+for (let i=0;i<10;i++){
+    if (i%3==0){
+    console.log(i);
+    }
+    else{ 
+        if(i%3==1){
+            console.log(i+100)
+        }
+        else{
+        console.log(i+200)
+        }
+    }
+}
+
+console.log("bon"+"jour")
+
 
 // Exercice 10 : écrire dans la console tous les résultats possibles de lancers de deux dés :
 // 1 1
