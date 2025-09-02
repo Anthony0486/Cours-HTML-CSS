@@ -25,42 +25,63 @@ function f4(n){
 // Utiliser la fonction f4 pour écrire dans la console le double de 99.
 console.log(f4(99));
 // Utiliser la fonction f4 pour stocker dans une variable appelée a le double de 99.
+let a=f4(99);
+console.log("La varibale a contient",a);
 
 // Écrire une fonction f5 qui prend en entrée deux nombres et qui affiche dans la console la somme de ces deux nombres.
-function f5(b,c){
-    console.log(b+c);
+function f5(n1,n2){
+    console.log(n1+n2);
 }
 // Utiliser la fonction f5 pour écrire dans la console la somme de 42 et 77.
 f5(42,77);
 // Écrire une fonction f6 qui prend en entrée deux nombres et qui retourne la somme de ces deux nombres.
-function f6(a,b){
-    return a+b;
+function f6(n1,n2){
+    return n1+n2;
 }
 // Utiliser la fonction f6 pour écrire dans la console la somme de 42 et 77.
 console.log(f6(42,77));
 // Utiliser la fonction f6 pour incrémenter la variable a de la somme de 42 et 77.
-f6(a=119);
+a=a+f6(42,77);
+console.log("La varibale a contient",a);
 // Écrire une fonction f7 qui prend deux nombres en entrée et qui retourne le plus grand des deux.
-function f7(a,b){
-    if (a>b){
-        return a;
+function f7(n1,n2){
+    if (n1>n2){
+        return n1;
     }
     else{
-        return b;
+        return n2;
     }
 }
+console.log(f7(5,10));
 // Écrire une fonction f8 qui prend trois nombres en entrée et qui retourne le plus grand des trois.
 // (Au moins deux versions possibles : sans utiliser f7, et en utilisant f7).
-function f8(a,b,c){
-    if (a>b && a>c){
-        return a;
-    }else if (b>a && b>c){
-        return b;
+function f8(n1,n2,n3){
+    if (n1>n2 && n1>n3){
+        return n1;
+    }else if (n2>n1 && n2>n3){
+        return n2;
     }else{
-        return c;
+        return n3;
     }
 }
-// Écrire une fonction f9 qui prend un nombre et un mot en entrée, et qui affiche dans la console ce mot ce nombre de fois.
-function f9(a, nom){
-    console.log(a*nom);
+console.log(f8(5,10,15));
+
+function f8(n4){
+    if (n4<f7(n1,n2)){
+        return f7;
+    }
+    else {
+        return n3;
+    }
 }
+f7(5,10);
+console.log(f8(20));
+
+// Écrire une fonction f9 qui prend un nombre et un mot en entrée, et qui affiche dans la console ce mot ce nombre de fois.
+function f9(number,word){
+    for (let i=0;i<number;i++){
+        console.log(word);
+    }
+}
+f9(10,"antho");
+
