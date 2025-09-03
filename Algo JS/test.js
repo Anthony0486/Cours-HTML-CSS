@@ -1,8 +1,11 @@
-let lenght;
-lenght=100;
-lenght++;
-lenght += 1;
-console.log(lenght);
-let lenght2=150;
-console.log(lenght2);
+function idatPos(a,b,n){
+    for(let i=0;i<6;i++){
+        let result=(a*i+b)%n;
+        console.log(result);
+        
+    }
+}
+idatPos(2,3,7);
+
+
 
