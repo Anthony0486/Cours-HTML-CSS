@@ -86,13 +86,21 @@ print();
 console.log("Niveau 5");
 let level5 = 5;
 reset();
-
 p(0);
-for(let i = 0 ; i < level5-1 ; i++) {
-	// TODO
+for(let i = 0 ; i < level5 ; i++) {
+	duplicate();
+	twice();
+	p(1);
+	add();
+	
 }
 
-print(); // Doit afficher :
+print();
+
+
+
+
+// Doit afficher :
 // 0 -> 0
 // 1 -> 1
 // 2 -> 3

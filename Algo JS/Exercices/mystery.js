@@ -20,3 +20,15 @@ function f2(arr) {
 
 // Écrire une fonction f3 qui prend un tableau en entrée
 // et qui retourne la somme des numéros de cases des éléments pairs d'un tableau
+
+function f3(tab){
+	let count=tab[0];
+	for(let i=0;i<tab.length;i++){
+		if(tab[i]%2 == 0){
+			count=tab[i]+count;
+		}
+	}
+	return count;
+}
+let tab1=[3,5,7,1,2,3];
+console.log(f3(tab1));

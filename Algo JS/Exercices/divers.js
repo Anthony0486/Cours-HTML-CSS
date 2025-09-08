@@ -42,12 +42,13 @@ console.log(totalTabPos(tab2));
 // Exercice divers_4 : En utilisant les deux fonctions précédentes, écrire une fonction qui retourne la somme des valeurs négatives d'un tableau.
 
 function totalTabNeg(tab){
+let total=0;
     for (let i=0;i<tab.length;i++){
         if (tab[i] < 0){
-            return totalTab(tab);
+        total = total + tab[i];
         }
     }
-    
+    return total;
 }
 
 console.log(totalTabNeg(tab2));
