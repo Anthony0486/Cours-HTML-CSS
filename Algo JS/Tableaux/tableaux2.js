@@ -73,7 +73,7 @@ function exist(tab,a){
     return false;
 }
 
-tab4=[10,30,30,20,40,100,12,50,3,4,5];
+tab4=[10,5,30,30,20,40,100,12,50,3,4];
 console.log(exist(tab4,5));
 
 // [Bonus] Suite de l'exo : on **sait** que le tableau reçu est trié (on ne le vérifie pas). Comment exploiter cette information pour améliorer la recherche d'un élément ?

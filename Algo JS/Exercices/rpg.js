@@ -39,7 +39,7 @@ console.log(player[0],"a",player[1],player[2],"de vie,",player[3],player[4],"de 
 
 
 // Par exemple, 
-displayInfo(secondPlayer);
+// displayInfo(secondPlayer);
 // devra afficher :
 // Nico Minoru a 50 points de vie, 100 points de mana et 10 points de force.
 
@@ -57,14 +57,14 @@ displayInfo(secondPlayer);
 // 10) Écrire une fonction directHit qui reçoit deux personnages en entrée et qui fait perdre des points de vie au second. Le nombre de points de vie perdus sera égal à la force du premier personnage.
 function directHit(player1, player2) {
 	player1[1]=player1[1]-player2[5];
-    return player1, player2;
+    return player1;
 }
 // 11) Utiliser la fonction précédente pour que le second personnage tape le premier personnage.
 (directHit(firstPlayer,secondPlayer));
-console.log((directHit(firstPlayer,secondPlayer)));
+displayInfo(secondPlayer);
 
 // 12) Le second personnage boit une potion de soin ! Ajouter 3 points de vie à Spiderman.
-firstPlayer[1]=firstPlayer[1]+3;
+secondPlayer[1]=secondPlayer[1]+3;
 // 13) Le premier personnage va boire plusieurs potions.
 let randomNumber = Math.floor(Math.random()*8)+2;
 console.log("Nico Minoru s'apprête à boire",randomNumber,"potions de vie !");
@@ -77,3 +77,14 @@ displayInfo(secondPlayer);
 // - vérifier que le personnage a au moins 10 points de mana ; si ce n'est pas le cas, la fonction est terminée
 // - faire perdre 10 points de mana à A
 // - faire perdre 25 points de vie à B
+function magicHit(player1,player2){
+    if (player1[3]>=10){
+        player2[1]=player2[1]-25;
+        player1[3]=player1[3]-10;
+    }else {
+        return
+    }
+}
+magicHit(firstPlayer,secondPlayer);
+displayInfo(firstPlayer);
+displayInfo(secondPlayer);
