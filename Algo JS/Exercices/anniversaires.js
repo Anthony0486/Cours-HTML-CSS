@@ -33,7 +33,7 @@ Le but de cet exercice est de répondre à la question "Combien de personnes fau
 /*
 1) Créer une fonction qui retourne un nombre au hasard entre 0 et une valeur donnée.
 Exemple : `random(6)` retourne au hasard 0, 1, 2, 3, 4 ou 5
-          `random(100)` retourne au hasard 0, 1, 2, ..., 98, ou 99
+        `random(100)` retourne au hasard 0, 1, 2, ..., 98, ou 99
 Pour cette fonction, vous aurez probablement besoin d'utiliser deux fonctions déjà existantes :
 La fonction `Math.random`. C'est une fonction qui ne prend rien en entrée, et qui retourne une valeur au hasard entre 0 et 1 (0.??????????).
 La fonction `Math.floor`. C'est une fonction qui prend un nombre en entrée et qui retourne l'arrondi en bas de ce nombre.
