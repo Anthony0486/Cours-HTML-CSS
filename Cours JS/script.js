@@ -67,8 +67,133 @@ while (i<10){
 function moyenne2(tab){
 let moyenne=0;
     for (let i=0;i<tab.length;i++){
-        moyenne=moyenne+tab[i];
+        moyenne+=tab[i];
     }
-    return moyenne/=tab.length;
+    return moyenne/tab.length;
 }
 console.log(moyenne2([10,15,5]));
+
+// les objets :
+
+//Exercice 1: créer et manipuler les objets:
+
+const gamingConsole = {
+    "name": "switch",
+    "color": "grey",
+    "support": "cartouche",
+    "price": 299,
+    "avantages": ["puissance","autonomie"]
+};
+console.log(gamingConsole.name);
+console.log(gamingConsole.avantages[1]);
+gamingConsole.release=2017; //Ajout d'une clé dans l'objet
+console.log(gamingConsole);
+delete gamingConsole.release //Supression d'une clé dans l'objet
+console.log(gamingConsole.hasOwnProperty("release")); //Verifier si la clé existe dans l'objet.
+gamingConsole.brand="Nintendo";
+console.log(gamingConsole);
+
+const gamingConsole2 = {
+    "name" : "switch 2",
+    "spec" : {
+        "puissance": 1024,
+        "autonomie": 6,
+        "modele" : {
+            "color": ["black","white"],
+            "edition": "standard",
+        }
+    }
+}
+console.log(gamingConsole2.spec.modele);
+
+//Exercice 2 : Ajouter des clés aux objets 
+const bibliotheque = {
+    "livre" : {
+        "titre": "Dune",
+        "editeur" : "hachete", 
+    },
+    "film" : {
+    },
+    "musique" : {
+
+    },
+}
+bibliotheque.film.release=2025;
+bibliotheque.film.productor="mgm";
+bibliotheque.film.genre="horror";
+bibliotheque.film.name="Ca";
+console.log(bibliotheque);
+bibliotheque.musique.release=1979;
+bibliotheque.musique.productor="X";
+bibliotheque.musique.genre="Rock";
+bibliotheque.musique.title="Led Zep";
+console.log(bibliotheque);
+
+//Exercice 3 : Template strings
+let spidey = "Spiderman";
+let pp = "Peter Parker";
+let mj = "Mary Jane";
+
+let phrase1 = "Salut ! Je suis " + pp + " alias " + spidey + "! Vous n'auriez pas vu " + mj + " par hasard?";
+console.log(phrase1);
+
+let phrase2 = `Salut ! Je suis ${pp} alias ${spidey}! Vous n'auriez pas vu ${mj} par hasard?`;
+console.log(phrase2);
+
+// Exercice 4 : Destructuring 
+
+const recette = {
+    ingredient1 : "Quetsche",
+    ingredient2 : "Farine",
+    ingredient3 : "Beurre",
+}
+
+const  {ingredient1, ingredient2, ingredient3} = recette;
+console.log(ingredient1,ingredient2,ingredient3);
+
+const recette2 = {
+    ingredientA : "Quetsche",
+    ingredientB : "Farine",
+    ingredientC : "Beurre",
+};
+const {ingredientA:ingrédientPrincipal, ingredientB,ingredientC} = recette2;
+console.log(ingrédientPrincipal);
+
+const notes = [12, 17, 8, 9, 11, 15, 14];
+const [francais, philo, lv1, lv2] = notes;
+console.log(lv2);
+
+//Exercice 5 : Melanger un array 
+
+function melange(tab){
+    for (let i=0;i<tab.length;i++) {
+        const random = Math.floor(Math.random() * tab.length);
+        [tab[i], tab[random]] = [tab[random], tab[i]];
+    }
+    return tab
+}
+console.log(melange([1,2,3,4,5,6]));
+
+// Le spread operator (...)
+const groupe1 = ["switch", "nes", "superNes"];
+const groupe2 = ["gameboy", "nds", "3ds"];
+const liste = [...groupe1, ...groupe2];
+liste.push("gameboyColor");
+console.log(liste);
+const liste2 = ["Salon:", ...groupe1, "Portable:", ...groupe2];
+console.log(liste);
+
+//DOM (document objet model)
+
+//Créer la variable pour recuperer un élément de la page HTML dans JS :
+
+const titreH2 = document.body.getElementsByTagName("H2");
+console.log(titreH2);
+const paragraphe1 = document.getElementById("paragraphe1");
+console.log(paragraphe1);
+const p1 = document.getElementsByClassName("p1");
+console.log(p1);
+const selector = document.querySelector(".p1"); //. pour une classe # pour un id
+console.log(selector);
+const selector2 = document.querySelectorAll("p");
+console.log(selector2);
