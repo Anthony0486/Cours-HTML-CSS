@@ -187,13 +187,37 @@ console.log(liste);
 
 //Créer la variable pour recuperer un élément de la page HTML dans JS :
 
-const titreH2 = document.body.getElementsByTagName("H2");
+const titreH2 = document.body.getElementsByTagName("H2"); //HTML COLLECTION
 console.log(titreH2);
 const paragraphe1 = document.getElementById("paragraphe1");
 console.log(paragraphe1);
 const p1 = document.getElementsByClassName("p1");
 console.log(p1);
-const selector = document.querySelector(".p1"); //. pour une classe # pour un id
+const selector = document.querySelector(".p1"); //. pour une classe # pour un id (NODE)
 console.log(selector);
-const selector2 = document.querySelectorAll("p");
+const selector2 = document.querySelectorAll("p"); //(Node)
 console.log(selector2);
+
+// document.body.insertBefore(p1, titreH2); //Inverser la position de 2 éléments.
+// document.body.appendChild(titreH2);
+// document.body.removeChild(titreH2);//Supprimer un élément.
+const text = document.createTextNode("Test text"); //Ajouter du texte dans le html depuis JS
+document.body.appendChild(text);
+console.log(document.body);
+document.body.replaceChild(text, selector);//Remplace un élément par un autre.
+
+function ajoutTexte(pseudo, texte){
+    const newTxt = document.createElement("p1");
+    newTxt.innerHTML = `<strong>${pseudo}</strong> : ${texte}`;
+    document.body.appendChild(newTxt);
+}
+//InnerHTML permet d'ajouter du texte dans le HTML mais est à eviter dans les bonnes pratiques.
+ajoutTexte("Antho", "Azery");
+paragraphe1.setAttribute("id", "par1"); //Permet de changer le contenu d'un attribut d'une class,id,href,src...
+console.log(paragraphe1.getAttribute("id"));  //Permet d'afficher l'attribut d'un élément.
+const lien = document.getElementsByTagName("a")[0];
+lien.setAttribute("href", "http://super.com");
+console.log(lien.getAttribute("href"));
+const texteTab = Array.from(selector2);
+texteTab.map(selector2 => selector2.innerText = "LOL HACKED");
+console.log(texteTab);
