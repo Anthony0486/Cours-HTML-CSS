@@ -201,23 +201,41 @@ console.log(selector2);
 // document.body.insertBefore(p1, titreH2); //Inverser la position de 2 éléments.
 // document.body.appendChild(titreH2);
 // document.body.removeChild(titreH2);//Supprimer un élément.
-const text = document.createTextNode("Test text"); //Ajouter du texte dans le html depuis JS
-document.body.appendChild(text);
-console.log(document.body);
-document.body.replaceChild(text, selector);//Remplace un élément par un autre.
+// const text = document.createTextNode("Test text"); //Ajouter du texte dans le html depuis JS
+// document.body.appendChild(text);
+// console.log(document.body);
+// document.body.replaceChild(text, selector);//Remplace un élément par un autre.
 
-function ajoutTexte(pseudo, texte){
-    const newTxt = document.createElement("p1");
-    newTxt.innerHTML = `<strong>${pseudo}</strong> : ${texte}`;
-    document.body.appendChild(newTxt);
+// function ajoutTexte(pseudo, texte){//InnerHTML permet d'ajouter du texte dans le HTML mais est à eviter dans les bonnes pratiques.
+//     const newTxt = document.createElement("p1");
+//     newTxt.innerHTML = `<strong>${pseudo}</strong> : ${texte}`;
+//     document.body.appendChild(newTxt);
+// }
+// ajoutTexte("Antho", "Azery");
+
+// paragraphe1.setAttribute("id", "par1"); //Permet de changer le contenu d'un attribut d'une class,id,href,src...
+// console.log(paragraphe1.getAttribute("id"));  //Permet d'afficher l'attribut d'un élément.
+// // const lien = document.getElementsByTagName("a")[0];
+// // lien.setAttribute("href", "http://super.com");
+// // console.log(lien.getAttribute("href"));
+
+// const texteTab = Array.from(selector2);
+// texteTab.map(selector2 => selector2.innerText = "LOL HACKED");
+// console.log(texteTab);
+const titre = document.querySelector("h2");
+const liens = document.querySelector("a");
+liens[0].addEventListener("click", function(){
+    titre.classList.add("maCouleur");
+})
+liens[1].addEventListener("click", function(){
+    titre.classList.remove("maCouleur");
+})
+liens[2].addEventListener("click", function(){
+    titre.classList.toggle("maCouleur");
+})
+
+function monClic(){
+    console.log("Bonjour");
+    liens.removeEventListener("click", monClic);
 }
-//InnerHTML permet d'ajouter du texte dans le HTML mais est à eviter dans les bonnes pratiques.
-ajoutTexte("Antho", "Azery");
-paragraphe1.setAttribute("id", "par1"); //Permet de changer le contenu d'un attribut d'une class,id,href,src...
-console.log(paragraphe1.getAttribute("id"));  //Permet d'afficher l'attribut d'un élément.
-const lien = document.getElementsByTagName("a")[0];
-lien.setAttribute("href", "http://super.com");
-console.log(lien.getAttribute("href"));
-const texteTab = Array.from(selector2);
-texteTab.map(selector2 => selector2.innerText = "LOL HACKED");
-console.log(texteTab);
+liens.addEventListener("click", monClic);
