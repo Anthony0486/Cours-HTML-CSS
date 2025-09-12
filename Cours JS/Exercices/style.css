@@ -1,0 +1,22 @@
+h1{
+    display: none;
+    text-align: center;
+    margin-top: 80px;
+    color: chartreuse;
+}
+
+body {min-height: 5000px;}
+
+.boxBar {
+    width: 100%;
+    border: 5px solid chartreuse;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    height: 20px;
+    background: chartreuse;
+    width: 0%;
+}

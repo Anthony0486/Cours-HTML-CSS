@@ -174,7 +174,7 @@ function melange(tab){
 }
 console.log(melange([1,2,3,4,5,6]));
 
-// Le spread operator (...)
+// Le spread operator (...) pour fusionner les objets.
 const groupe1 = ["switch", "nes", "superNes"];
 const groupe2 = ["gameboy", "nds", "3ds"];
 const liste = [...groupe1, ...groupe2];
@@ -187,16 +187,16 @@ console.log(liste);
 
 //Créer la variable pour recuperer un élément de la page HTML dans JS :
 
-const titreH2 = document.body.getElementsByTagName("H2"); //HTML COLLECTION
-console.log(titreH2);
-const paragraphe1 = document.getElementById("paragraphe1");
-console.log(paragraphe1);
-const p1 = document.getElementsByClassName("p1");
-console.log(p1);
-const selector = document.querySelector(".p1"); //. pour une classe # pour un id (NODE)
-console.log(selector);
-const selector2 = document.querySelectorAll("p"); //(Node)
-console.log(selector2);
+// const titreH2 = document.body.getElementsByTagName("H2"); //HTML COLLECTION
+// console.log(titreH2);
+// const paragraphe1 = document.getElementById("paragraphe1");
+// console.log(paragraphe1);
+// const p1 = document.getElementsByClassName("p1");
+// console.log(p1);
+// const selector = document.querySelector(".p1"); //. pour une classe # pour un id (NODE)
+// console.log(selector);
+// const selector2 = document.querySelectorAll("p"); //(Node)
+// console.log(selector2);
 
 // document.body.insertBefore(p1, titreH2); //Inverser la position de 2 éléments.
 // document.body.appendChild(titreH2);
@@ -222,20 +222,27 @@ console.log(selector2);
 // const texteTab = Array.from(selector2);
 // texteTab.map(selector2 => selector2.innerText = "LOL HACKED");
 // console.log(texteTab);
-const titre = document.querySelector("h2");
-const liens = document.querySelector("a");
-liens[0].addEventListener("click", function(){
-    titre.classList.add("maCouleur");
-})
-liens[1].addEventListener("click", function(){
-    titre.classList.remove("maCouleur");
-})
-liens[2].addEventListener("click", function(){
-    titre.classList.toggle("maCouleur");
-})
+// const titre = document.querySelector("h2");
+// const liens = document.querySelector("a");
+// liens[0].addEventListener("click", function(){
+//     titre.classList.add("maCouleur");
+// })
+// // liens[1].addEventListener("click", function(){
+// //     titre.classList.remove("maCouleur");
+// // })
+// // liens[2].addEventListener("click", function(){
+// //     titre.classList.toggle("maCouleur");
+// // })
 
-function monClic(){
-    console.log("Bonjour");
-    liens.removeEventListener("click", monClic);
-}
-liens.addEventListener("click", monClic);
+// // function monClic(){
+// //     console.log("Bonjour");
+// //     liens.removeEventListener("click", monClic);
+// // }
+// // liens.addEventListener("click", monClic);
+
+// addEventListener("keydown", function(event){
+//     console.log(event);
+// })
+// addEventListener("keydown", function(event){ //Permet de recuperer les caractères tapper par l'utilisateur sous forme d'objet.
+//     console.log(event.key);
+// })
