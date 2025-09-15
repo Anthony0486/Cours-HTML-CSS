@@ -49,6 +49,22 @@ p {
     position: absolute;
     border-radius: 50px;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    z-index: -1; /*de base tous les éléments on un Zindex positif pour être affichés devant, le passer en neg pour les afficher derrière.*/    
+}
 
+nav{
+    background: pink;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: -50px;
+    transition: 0.5s;
+
+}
+
+ul{
+    display: flex;
+    align-items: center;  
+    justify-content: space-around;
+    padding: 0;
 }
