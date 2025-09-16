@@ -198,9 +198,9 @@ console.log(selector);
 const selector2 = document.querySelectorAll("p"); //(Node)
 console.log(selector2);
 
-document.body.insertBefore(p1, titreH2); //Inverser la position de 2 éléments.
-document.body.appendChild(titreH2);
-document.body.removeChild(titreH2);//Supprimer un élément.
+// document.body.insertBefore(p1, titreH2); //Inverser la position de 2 éléments.
+// document.body.appendChild(titreH2);
+// document.body.removeChild(titreH2);//Supprimer un élément.
 const text = document.createTextNode("Test text"); //Ajouter du texte dans le html depuis JS
 document.body.appendChild(text);
 console.log(document.body);
@@ -246,3 +246,11 @@ addEventListener("keydown", function(event){
 addEventListener("keydown", function(event){ //Permet de recuperer les caractères tapper par l'utilisateur sous forme d'objet.
     console.log(event.key);
 })
+
+setTimeout(() => {
+    console.log("Coucou au bout de 5 secondes."); //Fait apparaitre un texte au bout de 5sec
+}, 5000);
+//Exactement pareil
+// setTimeout(function () {
+//     console.log("Coucou au bout de 5 secondes.");
+// }, 5000);

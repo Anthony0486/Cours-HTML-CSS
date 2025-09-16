@@ -5,14 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/13.0.3/marked.min.js" integrity="sha512-Psai3z4cnMO9lgFfmFlFzedh4j6EPUuox+zKhGJNSSL4ff5Bhxv2B4hJlYTwAknMEipmO8h/W3sLU46vmVrozw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <h2>Ceci est un titre</h2>
+    <div class="logo">
+    <img src="/Cours JS/Exercices/Assets/Final-Fantasy-Logo.png" alt="FFLOGO">
+    </div>
+    <h1>C'est parti, allons-y!</h1>
     <p id="paragraphe1" class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur architecto in, voluptatibus asperiores dicta et blanditiis cumque voluptates dolorum eum sapiente, quo modi tenetur odit possimus est rem ullam? Ullam?</p>
     <p id="Paragraphe2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam minus voluptas, excepturi nesciunt ab incidunt. Voluptatibus minus neque illum, obcaecati corrupti voluptas, tenetur laboriosam aliquid ex culpa doloribus enim cupiditate.</p>
     <a href="#">ON</a>
     <a href="#">OFF</a>
     <a href="#">SWITCH</a>
-    <script src="script.js"></script>
+    
+    <form action="" class="formContainer">
+        <textarea rows="10" cols="10"></textarea>
+        <select>
+            <option alt="menu déroulant" value="">Selectionnez votre FF favoris</option>
+            <option value="FF7">FF VII</option>
+            <option value="FF8">FF VIII</option>
+            <option value="FF9">FFIX</option>
+        </select>
+        
+        <input type="text" placeholder="Entrer votre mail" id="">
+        <input type="checkbox">Newsletter?
+        <input class="button" type="submit" value="Valider">
+    </form>
+
+<div class="copyArea"></div>
+    <script src="script2.js"></script>
+    
 </body>
 </html>
