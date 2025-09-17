@@ -41,7 +41,7 @@ window.addEventListener("mouseup", () => {
     mousemove.style.transform = "scale(1) translate(-50%, -50%)";
     mousemove.style.border = "2px solid teal";
 })
- 
+
 questionContainer.addEventListener("mouseenter", () => {
     questionContainer.style.background = "rgba(0,0,0,0.6)";
 });
@@ -119,3 +119,89 @@ form.addEventListener("submit", (e) => {
     }
 
 });
+//LOAD EVENTS----------------------------
+
+window.addEventListener("load", () => {
+    console.log("document chargé"); //charge le html et le css puis execute la fonction dans load
+})
+
+//----------------------------
+//Selectionner toute les classes avec forEach puis au clic réduire la taille de la target:
+const boxes = document.querySelectorAll(".box")
+console.log(boxes);
+boxes.forEach((box) => {
+    box.addEventListener("click", (e) => {
+        e.target.style.transform = "scale(0.7)";
+    })
+});
+//Evenement sans l'ecouteur ------------------------
+// document.body.onclick = () => {
+//     console.log("click!");
+// }
+//bubbling------------------------
+document.body.addEventListener("click", () => {
+    console.log("click 1 !");
+});
+//Usecapture------------------------
+document.body.addEventListener("click", () => {  
+console.log("click 2 !");
+},true); //Le true permet de jouer le 2eme evenement en premier.
+
+//----------------------------
+// stopPropagation permet de stopper un evenement, ici le 2eme click dans la console.
+// questionContainer.addEventListener("click", (e) => {
+//     alert("Test !");
+//     e.stopPropagation();
+// });
+
+//BOM----------------------------
+console.log(window.innerHeight);
+//window.open("http://google.fr", "nomDeLaPage", "height=600", "width=400");
+// window.close(); pour fermer la pop up
+
+//Evenementd adossés a window
+//alert
+//confirm
+btn2.addEventListener("click", () => {
+    confirm("Voulez vous vraiment vous tromper?");
+});
+
+//prompt
+btn1.addEventListener("click", () => {
+    let answer = prompt("Entrez votre nom");
+    questionContainer.innerHTML += "<h3>Bravo " + answer + "</h3>";
+});
+
+// setTimeout(() => {
+//     questionContainer.style.borderRadius = "300px";
+// }, 2000);
+
+// let interval = setInterval(()  => {
+//     document.body.innerHTML += `<div class="box"><h2>Nouvelle Boite !</h2></div>`
+// },1000);
+
+// document.body.addEventListener("click", (e) => {
+//     clearInterval(interval);
+//     e.target.remove(); //Permet de supprimer un élément au clic.
+// });
+//Location
+// console.log(location.href);
+// console.log(location.host);
+// console.log(location.pathname);
+// console.log(location.search);
+// location.replace("http://google.fr") redirige vers une autre page
+
+// window.onload = () => {
+//     location.href = "http://google.fr";
+// };
+//History
+// console.log(history);
+// window.history.back();
+//history.go(-2);
+
+//setProperty----------------------------
+window.addEventListener("mousemove", (e) => {
+    nav.style.setProperty("--x", e.layerX + "px")
+    nav.style.setProperty("--y", e.layerY + "px")
+})
+
